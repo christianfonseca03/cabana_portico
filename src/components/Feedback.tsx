@@ -11,7 +11,7 @@ export function Feedback() {
       <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl text-center py-5 md:py-12 bg-white">
         Feedbacks
       </h1>
-      <section className="grid grid-cols-2 gap-16 w-4/5 mx-auto justify-center mt-8 h-96">
+      <section className="grid grid-cols-2 gap-16 w-4/5 mx-auto justify-center mt-8">
         <FeedbackCard
           name="Marcelo"
           time="Dezembro de 2023"
