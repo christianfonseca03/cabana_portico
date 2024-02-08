@@ -1,12 +1,13 @@
 import { FeedbackCard } from "./ui/FeedbackCard";
-import audrey from "../assets/audrey.png"
-import jossana from "../assets/Jossana.png"
-import pedro from "../assets/pedroAlexandre.png"
-import marcelo from "../assets/marcelo.png"
+import audrey from "../assets/audrey.png";
+import jossana from "../assets/Jossana.png";
+import pedro from "../assets/pedroAlexandre.png";
+import marcelo from "../assets/marcelo.png";
 
 export function Feedback() {
   return (
-    <section className="bg-gradient-to-b from-marromCabana-500 w-full mb-20">
+    <section className="bg-gradient-to-b from-marromCabana-500 w-full">
+      <div className="bg-marromCabana-500 w-full h-20"></div>
       <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl text-center py-5 md:py-12 bg-white">
         Feedbacks
       </h1>

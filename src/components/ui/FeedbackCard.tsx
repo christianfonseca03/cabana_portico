@@ -1,10 +1,10 @@
 import stars from "../../assets/5stars.svg";
 
 interface FeedbackCardProps {
-  photo?: string;
-  name?: string;
-  text?: string;
-  time?: string;
+  photo: string;
+  name: string;
+  text: string;
+  time: string;
 }
 
 export function FeedbackCard({ photo, name, text, time }: FeedbackCardProps) {
