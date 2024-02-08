@@ -30,6 +30,9 @@ module.exports = {
           400: "#936647",
           500: "#EFE5D6",
         },
+        brancoCabana: {
+          100: "#EEEEEE",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
