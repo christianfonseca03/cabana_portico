@@ -23,6 +23,13 @@ module.exports = {
         Italiana: ["Italiana"],
       },
       colors: {
+        marromCabana: {
+          100: "#A68874",
+          200: "#73492D",
+          300: "#D3A382",
+          400: "#936647",
+          500: "#EFE5D6",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
