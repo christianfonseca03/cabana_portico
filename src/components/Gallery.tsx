@@ -61,7 +61,7 @@ export function Gallery() {
         />
       </section>
       <div className="flex text-white justify-center sm:text-xs font-Karla md:text-xl mb-8 md:mb-10">
-        <a href="#" className="mr-2">
+        <a href="https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r" target="_blank" className="mr-2">
           Veja mais no Airbnb
         </a>
         <MoveRight />
