@@ -14,7 +14,7 @@ export function Gallery() {
   return (
     <section className="flex flex-col mt-20 md:mt-44 xl:mt-72 bg-gradient-to-b from-white via-marromCabana-300 to-marromCabana-400">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl">
+        <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl" id="Galeria">
           Galeria
         </h1>
         <h2 className="font-Karla text-marromCabana-100 md:text-xl">

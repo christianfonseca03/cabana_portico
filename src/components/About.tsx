@@ -3,7 +3,7 @@ import cabana from "../assets/cabanaAbout.png";
 export function About() {
   return (
     <section className="flex flex-col items-center mt-24 relative ">
-      <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl mb-12">
+      <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl mb-12" id="Sobre">
         A Cabana do Pórtico
       </h1>
       <div className="flex bg-brancoCabana-200 rounded-xl shadow-xl justify-center p-8 w-2/4 mx-auto">
