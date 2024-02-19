@@ -9,8 +9,12 @@ export function About() {
       >
         A Cabana do Pórtico
       </h1>
-      <div className="flex flex-col md:flex-row bg-brancoCabana-200 rounded-xl shadow-xl justify-center items-center p-2 md:p-8 w-3/4 md:w-2/4 mx-auto">
-        <img src={cabana} className="w-1/2 rounded-xl mb-6 md:mr-4" alt="" />
+      <div className="flex flex-col xl:flex-row bg-brancoCabana-200 rounded-xl shadow-xl justify-center items-center p-4 xl:p-8 w-3/4 xl:w-2/4 mx-auto">
+        <img
+          src={cabana}
+          className="w-3/4  lg:w-2/4 rounded-xl mb-6 xl:mr-4"
+          alt=""
+        />
         <p>
           Seja surpreendido com uma vista extraordinária dos morros e colinas de
           Gramado ao acordar. A apenas 10 minutos de centro da cidade a Cabana
