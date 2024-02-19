@@ -3,11 +3,14 @@ import cabana from "../assets/cabanaAbout.png";
 export function About() {
   return (
     <section className="flex flex-col items-center mt-24 relative ">
-      <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl mb-12" id="Sobre">
+      <h1
+        className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl mb-12"
+        id="Sobre"
+      >
         A Cabana do Pórtico
       </h1>
-      <div className="flex bg-brancoCabana-200 rounded-xl shadow-xl justify-center p-8 w-2/4 mx-auto">
-        <img src={cabana} className="w-1/2 rounded-xl mr-4" alt="" />
+      <div className="flex flex-col md:flex-row bg-brancoCabana-200 rounded-xl shadow-xl justify-center items-center p-8 w-3/4 md:w-2/4 mx-auto">
+        <img src={cabana} className="w-1/2 rounded-xl mb-6 md:mr-4" alt="" />
         <p>
           Seja surpreendido com uma vista extraordinária dos morros e colinas de
           Gramado ao acordar. A apenas 10 minutos de centro da cidade a Cabana
