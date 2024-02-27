@@ -2,7 +2,7 @@ import hero_section from "../assets/hero_section.svg";
 
 export function HeroSection() {
   return (
-    <section className="flex flex-col">
+    <section className="flex flex-col sm:items-center md:items-stretch">
       <img src={hero_section} className="-z-10 absolute" alt="" />
       <nav className="md:flex justify-between px-40 mt-10 h-14 items-center hidden text-white md:text-2xl bg-black bg-opacity-10 font-Karla ">
         <a href="#Galeria" className="">

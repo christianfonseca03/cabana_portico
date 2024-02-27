@@ -8,10 +8,13 @@ export function Feedback() {
   return (
     <section className="bg-gradient-to-b from-marromCabana-500 w-full">
       <div className="bg-marromCabana-500 w-full h-20"></div>
-      <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl text-center py-5 md:py-12 bg-white" id="Feedback">
+      <h1
+        className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl text-center py-5 md:py-12 bg-white"
+        id="Feedback"
+      >
         Feedbacks
       </h1>
-      <section className="grid grid-cols-2 gap-16 w-4/5 mx-auto justify-center mt-8">
+      <section className="md:grid md:grid-cols-2 md:gap-16 w-4/5 mx-auto justify-center mt-8 flex flex-col gap-10">
         <FeedbackCard
           name="Marcelo"
           time="Dezembro de 2023"
