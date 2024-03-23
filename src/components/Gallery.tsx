@@ -14,7 +14,10 @@ export function Gallery() {
   return (
     <section className="flex flex-col mt-20 md:mt-44 xl:mt-72 bg-gradient-to-b from-white via-marromCabana-300 to-marromCabana-400">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl" id="Galeria">
+        <h1
+          className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl"
+          id="Galeria"
+        >
           Galeria
         </h1>
         <h2 className="font-Karla text-marromCabana-100 md:text-xl">
@@ -60,8 +63,12 @@ export function Gallery() {
           alt=""
         />
       </section>
-      <div className="flex text-white justify-center sm:text-xs font-Karla md:text-xl mb-8 md:mb-10">
-        <a href="https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r" target="_blank" className="mr-2">
+      <div className="flex text-white justify-center sm:text-xs font-Karla md:text-xl mb-8 md:mb-10 hover:text-neutral-300 transition-colors">
+        <a
+          href="https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r"
+          target="_blank"
+          className="mr-2"
+        >
           Veja mais no Airbnb
         </a>
         <MoveRight />
