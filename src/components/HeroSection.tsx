@@ -59,7 +59,7 @@ export function HeroSection() {
           Contato
         </a>
       </nav>
-      <div className="mt-5 md:mt-8 lg:mt-20 xl:mt-36 ml-52 md:ml-96 lg:pl-36 xl:pl-[360px] flex flex-col w-fit text-white">
+      <div className="mt-6 md:mt-8 lg:mt-20 xl:mt-36 ml-52 md:ml-96 lg:pl-36 xl:pl-[360px] flex flex-col w-fit text-white">
         <h1 className="font-Julius text-lg md:text-5xl lg:text-6xl xl:text-7xl text-end">
           Cabana do
         </h1>
