@@ -44,7 +44,7 @@ export function Feedback() {
         <FeedbackCard
           name="Rakel"
           time="Janeiro de 2024"
-          text="Foram dias encantadores na Cabana do Pórtico, uma energia incrível com uma paisagem surreal !! A cabana é simplesmente perfeita, aconchegante e completa ! Dias de muita alegria com a família , retornaremos em breve com certeza! Obrigado por nos proporcionar tantos momentos maravilhosos! Gratidão 🙏🏻😍"
+          text="Foram dias encantadores na Cabana do Pórtico, uma energia incrível com uma paisagem surreal !! A cabana é simplesmente perfeita, aconchegante e completa ! Dias de muita alegria com a família , retornaremos em breve com certeza! Obrigado por nos proporcionar tantos momentos maravilhosos! Gratidão"
           photo={rakel}
         />
         <FeedbackCard
