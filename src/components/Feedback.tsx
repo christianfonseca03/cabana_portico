@@ -1,8 +1,10 @@
 import { FeedbackCard } from "./ui/FeedbackCard";
-import audrey from "../assets/audrey.png";
-import jossana from "../assets/Jossana.png";
-import pedro from "../assets/pedroAlexandre.png";
-import marcelo from "../assets/marcelo.png";
+import audrey from "../assets/audrey.jpeg";
+import jossana from "../assets/Jossana.jpeg";
+import pedro from "../assets/pedroAlexandre.jpeg";
+import marcelo from "../assets/marcelo.jpeg";
+import cameron from "../assets/cameron.jpeg";
+import rakel from "../assets/rakel.jpeg";
 
 export function Feedback() {
   return (
@@ -38,6 +40,18 @@ export function Feedback() {
           time="Outubro de 2023"
           text="Ótima localização… casa exatamente igual a descrição e fotos… anfitrião super prestativo. Recomendo"
           photo={pedro}
+        />
+        <FeedbackCard
+          name="Rakel"
+          time="Janeiro de 2024"
+          text="Foram dias encantadores na Cabana do Pórtico, uma energia incrível com uma paisagem surreal !! A cabana é simplesmente perfeita, aconchegante e completa ! Dias de muita alegria com a família , retornaremos em breve com certeza! Obrigado por nos proporcionar tantos momentos maravilhosos! Gratidão 🙏🏻😍"
+          photo={rakel}
+        />
+        <FeedbackCard
+          name="Cameron"
+          time="Fevereiro de 2024"
+          text="Beautiful place, will definitely stay here next time Im in Brazil."
+          photo={cameron}
         />
       </section>
     </section>

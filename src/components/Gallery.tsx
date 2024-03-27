@@ -1,12 +1,12 @@
-import foto1 from "../assets/foto1.png";
-import foto2 from "../assets/foto2.png";
-import foto3 from "../assets/foto3.png";
-import foto4 from "../assets/foto4.png";
-import foto5 from "../assets/foto5.png";
-import foto6 from "../assets/foto6.png";
-import foto7 from "../assets/foto7.png";
-import foto8 from "../assets/foto8.png";
-import foto9 from "../assets/foto9.png";
+import foto1 from "../assets/foto1.jpeg";
+import foto2 from "../assets/foto2.jpeg";
+import foto3 from "../assets/foto3.jpeg";
+import foto4 from "../assets/foto4.jpeg";
+import foto5 from "../assets/foto5.jpeg";
+import foto6 from "../assets/foto6.jpeg";
+import foto7 from "../assets/foto7.jpeg";
+import foto8 from "../assets/foto8.jpeg";
+import foto9 from "../assets/foto9.jpeg";
 
 import { MoveRight } from "lucide-react";
 
