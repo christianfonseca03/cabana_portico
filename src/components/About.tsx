@@ -16,9 +16,9 @@ export function About() {
           alt=""
         />
         <p>
-          Seja surpreendido com uma vista extraordinária das montanhas e colinas de
-          Gramado ao acordar. A apenas 10 minutos do centro da cidade a Cabana
-          do Pórtico é o lugar perfeito para passar momentos incríveis e
+          Seja surpreendido com uma vista extraordinária das montanhas e colinas
+          de Gramado ao acordar. A apenas 10 minutos do centro da cidade a
+          Cabana do Pórtico é o lugar perfeito para passar momentos incríveis e
           inesquecíveis. Escolha entre noites na lareira dentro da Cabana ou na
           fogueira na parte externa. Conta com cozinha completa, Wi-fi,
           ar-condicionado, 2 banheiros, vaga para 2 carros e acomoda até 6
