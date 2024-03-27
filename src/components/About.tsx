@@ -1,5 +1,5 @@
 import cabana from "../assets/cabanaAbout.jpeg";
-
+//
 export function About() {
   return (
     <section className="flex flex-col items-center mt-24 relative ">
