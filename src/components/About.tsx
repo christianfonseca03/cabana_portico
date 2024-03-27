@@ -1,4 +1,4 @@
-
+import cabana from "../assets/aboutCabana.jpeg"
 
 export function About() {
   return (
@@ -10,7 +10,11 @@ export function About() {
         A Cabana do Pórtico
       </h1>
       <div className="flex flex-col xl:flex-row bg-brancoCabana-200 rounded-xl shadow-xl justify-center items-center p-4 xl:p-8 w-3/4 xl:w-2/4 mx-auto">
-       
+        <img
+          src={cabana}
+          className="w-3/4  lg:w-2/4 rounded-xl mb-6 xl:mr-4"
+          alt=""
+        />
         <p>
           Seja surpreendido com uma vista extraordinária das montanhas e colinas
           de Gramado ao acordar. A apenas 10 minutos do centro da cidade a
