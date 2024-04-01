@@ -18,6 +18,18 @@ export function Feedback() {
       </h1>
       <section className="md:grid md:grid-cols-2 md:gap-16 w-4/5 mx-auto justify-center mt-8 flex flex-col gap-10">
         <FeedbackCard
+          name="Cameron"
+          time="Fevereiro de 2024"
+          text="Beautiful place, will definitely stay here next time Im in Brazil."
+          photo={cameron}
+        />
+        <FeedbackCard
+          name="Rakel"
+          time="Janeiro de 2024"
+          text="Foram dias encantadores na Cabana do Pórtico, uma energia incrível com uma paisagem surreal !! A cabana é simplesmente perfeita, aconchegante e completa ! Dias de muita alegria com a família , retornaremos em breve com certeza! Obrigado por nos proporcionar tantos momentos maravilhosos! Gratidão"
+          photo={rakel}
+        />
+        <FeedbackCard
           name="Marcelo"
           time="Dezembro de 2023"
           text="A cabana nos surpreendeu de todas as formas. o lugar é espetacular. A anfitriã atenciosa e sempre à disposição. Com certeza voltarei. "
@@ -40,18 +52,6 @@ export function Feedback() {
           time="Outubro de 2023"
           text="Ótima localização… casa exatamente igual a descrição e fotos… anfitrião super prestativo. Recomendo"
           photo={pedro}
-        />
-        <FeedbackCard
-          name="Rakel"
-          time="Janeiro de 2024"
-          text="Foram dias encantadores na Cabana do Pórtico, uma energia incrível com uma paisagem surreal !! A cabana é simplesmente perfeita, aconchegante e completa ! Dias de muita alegria com a família , retornaremos em breve com certeza! Obrigado por nos proporcionar tantos momentos maravilhosos! Gratidão"
-          photo={rakel}
-        />
-        <FeedbackCard
-          name="Cameron"
-          time="Fevereiro de 2024"
-          text="Beautiful place, will definitely stay here next time Im in Brazil."
-          photo={cameron}
         />
       </section>
     </section>
