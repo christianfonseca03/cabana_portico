@@ -28,7 +28,7 @@ export function Contact() {
           </button>
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=5551982252552"
+          href="https://api.whatsapp.com/send?phone=5551994798651"
           target="_blank"
         >
           <button className="bg-marromCabana-200 text-white w-48 h-12 text-sm rounded-full mb-4 font-Karla flex justify-center items-center hover:bg-yellow-900 transition-colors">
