@@ -1,6 +1,12 @@
 import whiteIcon from "../assets/whiteIcon.png";
 
 export default function NavBar() {
+  const handleReserveClick = () => {
+    window.open(
+      "https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r",
+      "_blank"
+    );
+  };
   return (
     <div className="navbar bg-marromCabana-500 shadow-sm">
       <div className="navbar-start">
@@ -65,7 +71,11 @@ export default function NavBar() {
           </ul>
         </div>
         <a className="btn btn-ghost items-center hover:bg-transparent">
-          <img src={whiteIcon} alt="Cabana do Pórtico" className="md:w-20 md:h-20 w-16 h-16" />
+          <img
+            src={whiteIcon}
+            alt="Cabana do Pórtico"
+            className="md:w-20 md:h-20 w-16 h-16"
+          />
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
@@ -106,7 +116,7 @@ export default function NavBar() {
       </div>
       <div className="navbar-end">
         <a
-          href="#gallery"
+          onClick={handleReserveClick}
           className="btn bg-marromCabana-100 text-marromCabana-500 font-Karla font-semibold hover:bg-marromCabana-300 hover:border-marromCabana-300 hover:text-marromCabana-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
         >
           Reserve

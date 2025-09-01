@@ -2,7 +2,6 @@ import { MoveRight } from "lucide-react";
 
 export function CallToAction() {
   const handleReserveClick = () => {
-    // Redirecionar para o Airbnb
     window.open(
       "https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r",
       "_blank"

@@ -117,9 +117,13 @@ export function Gallery() {
         >
           Galeria
         </h1>
-        <h2 className="font-Karla text-marromCabana-500 md:text-xl">
+        <a
+          href="https://www.instagram.com/cabanadoportico/"
+          target="_blank"
+          className="font-Karla text-marromCabana-500 md:text-xl"
+        >
           @cabanadoportico
-        </h2>
+        </a>
       </div>
       <div
         className="w-4/5 mx-auto mt-8 md:mb-16 mb-8"

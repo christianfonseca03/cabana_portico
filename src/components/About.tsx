@@ -17,7 +17,7 @@ export function About() {
           </div>
 
           <div className="lg:w-1/2 bg-marromCabana-100 p-8 rounded-xl">
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-6 mb-8">
               <div className="flex items-center space-x-3">
                 <div className="w-12 h-12 bg-marromCabana-300 rounded-full flex items-center justify-center">
                   <svg
@@ -129,6 +129,20 @@ export function About() {
                   </p>
                 </div>
               </div>
+            </div>
+
+            <div className="flex justify-center">
+              <button
+                onClick={() =>
+                  window.open(
+                    "https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r",
+                    "_blank"
+                  )
+                }
+                className="bg-marromCabana-100 text-marromCabana-500 font-Karla font-semibold px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg hover:bg-marromCabana-300 hover:border-marromCabana-300 hover:text-marromCabana-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:scale-105 cursor-pointer w-fit"
+              >
+                Reserve Agora
+              </button>
             </div>
           </div>
         </div>

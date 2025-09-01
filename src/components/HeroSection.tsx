@@ -5,17 +5,15 @@ import { useEffect, useState } from "react";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
-
+  const handleReserveClick = () => {
+    window.open(
+      "https://api.whatsapp.com/send?phone=5551994798651",
+      "_blank"
+    );
+  };
   useEffect(() => {
     setIsLoaded(true);
   }, []);
-
-  const scrollToNextSection = () => {
-    const nextSection = document.getElementById("gallery");
-    if (nextSection) {
-      nextSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   return (
     <section className="flex flex-col lg:flex-row h-screen w-full">
@@ -32,7 +30,7 @@ export function HeroSection() {
             Momentos inesquecíveis para viver o melhor de Gramado
           </h2>
           <button
-            onClick={scrollToNextSection}
+            onClick={handleReserveClick}
             className="bg-marromCabana-100 text-marromCabana-500 font-Karla font-semibold px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg hover:bg-marromCabana-300 hover:text-marromCabana-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
           >
             Saiba Mais
