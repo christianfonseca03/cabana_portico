@@ -9,7 +9,7 @@ interface FeedbackCardProps {
 
 export function FeedbackCard({ photo, name, text, time }: FeedbackCardProps) {
   return (
-    <div className="w-full h-auto bg-brancoCabana-100 shadow-lg rounded-xl flex flex-col font-Karla">
+    <div className="w-full h-auto bg-marromCabana-100 shadow-lg rounded-xl flex flex-col font-Karla">
       <div className="flex items-center mt-4">
         <img src={photo} alt="" className="w-14 h-14 rounded-full ml-4" />
         <div className="flex flex-col ml-4">
@@ -18,7 +18,7 @@ export function FeedbackCard({ photo, name, text, time }: FeedbackCardProps) {
           <p>{time}</p>
         </div>
       </div>
-      <div className="bg-white w-auto h-auto rounded-2xl mx-4 mt-2 py-2 mb-4">
+      <div className="bg-marromCabana-200 w-auto h-auto rounded-2xl mx-4 mt-2 py-2 mb-4">
         <p className="p-2">{text}</p>
       </div>
     </div>

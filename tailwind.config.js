@@ -24,15 +24,15 @@ module.exports = {
       },
       colors: {
         marromCabana: {
-          100: "#A68874",
-          200: "#73492D",
-          300: "#D3A382",
-          400: "#936647",
-          500: "#EFE5D6",
+          100: "#F5EFE3", // Mais claro
+          200: "#E6D3B3", // Claro
+          300: "#8B5E3C", // Médio
+          400: "#6A8E6B", // Verde médio
+          500: "#2F4F3E", // Verde escuro
         },
         brancoCabana: {
-          100: "#EEEEEE",
-          200: "#F4F4F4"
+          100: "#F5EFE3",
+          200: "#E6D3B3",
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -89,5 +89,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("daisyui")],
 };

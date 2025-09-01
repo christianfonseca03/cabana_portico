@@ -7,73 +7,136 @@ import foto6 from "../assets/foto6.jpeg";
 import foto7 from "../assets/foto7.jpeg";
 import foto8 from "../assets/foto8.jpeg";
 import foto9 from "../assets/foto9.jpeg";
-
-import { MoveRight } from "lucide-react";
+import foto10 from "../assets/foto10.jpeg";
+import foto11 from "../assets/foto11.jpeg";
+import foto12 from "../assets/foto12.jpeg";
+import foto13 from "../assets/foto13.jpeg";
+import foto14 from "../assets/foto14.jpeg";
+import foto15 from "../assets/foto15.jpeg";
+import foto16 from "../assets/foto16.jpeg";
+import foto17 from "../assets/foto17.jpeg";
+import foto18 from "../assets/foto18.jpeg";
+import foto19 from "../assets/foto19.jpeg";
+import foto20 from "../assets/foto20.jpeg";
+import Masonry from "./ui/Masonry";
+import { Item } from "../types/masonry";
 
 export function Gallery() {
+  const items: Item[] = [
+    {
+      id: "1",
+      img: foto1,
+    },
+    {
+      id: "2",
+      img: foto2,
+    },
+    {
+      id: "3",
+      img: foto3,
+    },
+    {
+      id: "4",
+      img: foto4,
+    },
+    {
+      id: "5",
+      img: foto5,
+    },
+    {
+      id: "6",
+      img: foto6,
+    },
+    {
+      id: "7",
+      img: foto7,
+    },
+    {
+      id: "8",
+      img: foto8,
+    },
+    {
+      id: "9",
+      img: foto9,
+    },
+    {
+      id: "10",
+      img: foto10,
+    },
+    {
+      id: "11",
+      img: foto11,
+    },
+    {
+      id: "12",
+      img: foto12,
+    },
+    {
+      id: "13",
+      img: foto13,
+    },
+    {
+      id: "14",
+      img: foto14,
+    },
+    {
+      id: "15",
+      img: foto15,
+    },
+    {
+      id: "16",
+      img: foto16,
+    },
+    {
+      id: "17",
+      img: foto17,
+    },
+    {
+      id: "18",
+      img: foto18,
+    },
+    {
+      id: "19",
+      img: foto19,
+    },
+    {
+      id: "20",
+      img: foto20,
+    },
+  ];
+
   return (
-    <section className="flex flex-col mt-20 md:mt-44 xl:mt-72 bg-gradient-to-b from-white via-marromCabana-300 to-marromCabana-400">
+    <section
+      id="gallery"
+      className="flex flex-col bg-marromCabana-100 pb-4 md:pb-8 shadow-xl rounded-xl"
+    >
       <div className="flex flex-col justify-center items-center">
         <h1
-          className="font-Italiana text-marromCabana-200 text-xl md:text-3xl xl:text-5xl"
+          className="font-Julius pt-10 text-marromCabana-500 text-xl md:text-3xl xl:text-5xl"
           id="Galeria"
         >
           Galeria
         </h1>
-        <h2 className="font-Karla text-marromCabana-100 md:text-xl">
+        <h2 className="font-Karla text-marromCabana-500 md:text-xl">
           @cabanadoportico
         </h2>
       </div>
-      <section className="grid grid-cols-3 gap-2 md:gap-6 w-4/5 mx-auto justify-center mt-8 md:mb-16 mb-14 ">
-        <img
-          src={foto1}
-          className="rounded-3xl col-span-2 row-span-2 drop-shadow-md"
-          alt=""
+      <div
+        className="w-4/5 mx-auto mt-8 md:mb-16 mb-8"
+        style={{ minHeight: "600px" }}
+      >
+        <Masonry
+          items={items}
+          ease="power3.out"
+          duration={0.6}
+          stagger={0.05}
+          animateFrom="bottom"
+          scaleOnHover={true}
+          hoverScale={0.95}
+          blurToFocus={true}
+          colorShiftOnHover={false}
         />
-        <img
-          src={foto2}
-          className="rounded-3xl col-start-3 drop-shadow-md"
-          alt=""
-        />
-        <img src={foto3} className="rounded-3xl drop-shadow-md" alt="" />
-        <img
-          src={foto4}
-          className="rounded-3xl col-span-2 col-start-2 row-span-2 drop-shadow-md"
-          alt=""
-        />
-        <img
-          src={foto8}
-          className="rounded-3xl drop-shadow-md row-start-3 col-start-1"
-          alt=""
-        />
-        <img
-          src={foto9}
-          className="rounded-3xl drop-shadow-md row-start-4 col-start-1"
-          alt=""
-        />
-        <img
-          src={foto6}
-          className="rounded-3xl col-span-2 row-span-2 drop-shadow-md"
-          alt=""
-        />
-        <img src={foto7} className="rounded-3xl drop-shadow-md" alt="" />
-        <img
-          src={foto5}
-          className="rounded-3xl drop-shadow-md row-start-5 col-start-3"
-          alt=""
-        />
-      </section>
-      <div className="flex text-white justify-center sm:text-xs font-Karla md:text-xl mb-8 md:mb-10 hover:text-neutral-300 transition-colors">
-        <a
-          href="https://www.airbnb.com.br/rooms/53605809?source_impression_id=p3_1695736573_tDUNdktQjbqKh%2B3r"
-          target="_blank"
-          className="mr-2"
-        >
-          Veja mais no Airbnb
-        </a>
-        <MoveRight />
       </div>
-      <div className="w-full bg-marromCabana-500 h-8 mb-10 md:mb-14"></div>
     </section>
   );
 }

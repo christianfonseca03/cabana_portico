@@ -1,74 +1,55 @@
 "use client";
 
-import { useState } from "react";
-import hero_section from "../assets/hero_section.svg";
-
-import { AlignJustify } from "lucide-react";
+import foto1 from "../assets/foto1.jpeg";
+import { useEffect, useState } from "react";
 
 export function HeroSection() {
-  const [openMenu, setOpenMenu] = useState(false);
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("gallery");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
   };
+
   return (
-    <section className="flex flex-col sm:items-center md:items-stretch">
-      <img src={hero_section} className="-z-10 absolute" alt="" />
-      <div
-        className={
-          openMenu
-            ? "bg-gradient-to-b from-marromCabana-400 via-marromCabana-300 to-white h-screen flex flex-col items-center pt-4 transition-all md:hidden"
-            : " flex flex-col items-end pt-2 pr-2 transition-all md:hidden"
-        }
-      >
-        <AlignJustify className="text-white" onClick={handleOpenMenu} />
-        <nav
-          className={
-            openMenu
-              ? "text-white flex flex-col mt-8 font-Karla gap-2 text-2xl"
-              : "hidden"
-          }
+    <section className="flex flex-col lg:flex-row h-screen w-full">
+      <div className="w-full lg:w-[60%] h-1/2 lg:h-full bg-marromCabana-500 flex items-center justify-center px-8 lg:px-16">
+        <div
+          className={`text-white text-center max-w-2xl transition-all duration-1000 transform ${
+            isLoaded ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+          }`}
         >
-          <a href="#Galeria" onClick={handleOpenMenu}>
-            Galeria
-          </a>
-          <a href="#Sobre" onClick={handleOpenMenu}>
-            Sobre nós
-          </a>
-          <a href="#Feedback" onClick={handleOpenMenu}>
-            Feedback
-          </a>
-          <a href="#Contato" onClick={handleOpenMenu}>
-            Contato
-          </a>
-        </nav>
+          <h1 className="font-Julius text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-medium mb-4 lg:mb-6 drop-shadow-2xl">
+            Cabana do Pórtico
+          </h1>
+          <h2 className="font-Karla text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 lg:mb-8 drop-shadow-lg text-marromCabana-100 px-4">
+            Momentos inesquecíveis para viver o melhor de Gramado
+          </h2>
+          <button
+            onClick={scrollToNextSection}
+            className="bg-marromCabana-100 text-marromCabana-500 font-Karla font-semibold px-6 lg:px-8 py-3 lg:py-4 rounded-lg text-base lg:text-lg hover:bg-marromCabana-300 hover:text-marromCabana-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 cursor-pointer"
+          >
+            Saiba Mais
+          </button>
+        </div>
       </div>
-      <nav className="md:flex justify-between px-40 mt-10 h-14 items-center hidden text-white md:text-2xl bg-black bg-opacity-10 font-Karla ">
-        <a href="#Galeria" className="hover:text-neutral-200 transition-colors">
-          Galeria
-        </a>
-        <a href="#Sobre" className="hover:text-neutral-200 transition-colors">
-          Sobre nós
-        </a>
-        <a
-          href="#Feedback"
-          className="hover:text-neutral-200 transition-colors"
-        >
-          Feedback
-        </a>
-        <a href="#Contato" className="hover:text-neutral-200 transition-colors">
-          Contato
-        </a>
-      </nav>
-      <div className="mt-6 md:mt-8 lg:mt-20 xl:mt-36 ml-52 md:ml-96 lg:pl-36 xl:pl-[360px] flex flex-col w-fit text-white">
-        <h1 className="font-Julius text-lg md:text-5xl lg:text-6xl xl:text-7xl text-end">
-          Cabana do
-        </h1>
-        <h2 className="font-Julius text-lg md:text-6xl lg:text-7xl xl:text-8xl text-end">
-          Pórtico
-        </h2>
-        <h3 className="font-Karla text-xs md:text-xl lg:text-2xl xl:text-3xl ml-auto">
-          Gramado
-        </h3>
+      <div
+        className={`w-full lg:w-[40%] h-1/2 lg:h-full relative overflow-hidden transition-all duration-1000 transform ${
+          isLoaded ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+        }`}
+      >
+        <img
+          src={foto1}
+          alt="Cabana do Pórtico"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
       </div>
     </section>
   );
