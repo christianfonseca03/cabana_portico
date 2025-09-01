@@ -96,7 +96,8 @@ const Masonry: React.FC<MasonryProps> = ({
         height = child.height;
       } else {
         // Proporção mais realista para fotos (3:4 para retrato, 4:3 para paisagem)
-        const randomRatio = Math.random() > 0.5 ? 4 / 3 : 3 / 4;
+        // Priorizar fotos mais altas no início
+        const randomRatio = Math.random() > 0.3 ? 4 / 3 : 3 / 4; // 70% paisagem, 30% retrato
         height = columnWidth * randomRatio;
       }
 
@@ -125,7 +126,8 @@ const Masonry: React.FC<MasonryProps> = ({
         height = child.height;
       } else {
         // Proporção mais realista para fotos (3:4 para retrato, 4:3 para paisagem)
-        const randomRatio = Math.random() > 0.5 ? 4 / 3 : 3 / 4;
+        // Priorizar fotos mais altas no início
+        const randomRatio = Math.random() > 0.3 ? 4 / 3 : 3 / 4; // 70% paisagem, 30% retrato
         height = columnWidth * randomRatio;
       }
 
@@ -133,7 +135,7 @@ const Masonry: React.FC<MasonryProps> = ({
     });
 
     // Adicionar margem extra para garantir que todas as imagens sejam visíveis
-    return Math.max(...colHeights) + 30;
+    return Math.max(...colHeights) + 80;
   }, [columns, items, width]);
 
   const handleImageClick = (imageSrc: string, imageAlt?: string) => {
@@ -248,7 +250,7 @@ const Masonry: React.FC<MasonryProps> = ({
         style={{
           height: `${containerHeight}px`,
           position: "relative",
-          marginBottom: "10px",
+          marginBottom: "20px",
         }}
       >
         {grid.map((item) => {

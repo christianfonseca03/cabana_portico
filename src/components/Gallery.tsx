@@ -22,88 +22,37 @@ import Masonry from "./ui/Masonry";
 import { Item } from "../types/masonry";
 
 export function Gallery() {
-  const items: Item[] = [
-    {
-      id: "1",
-      img: foto1,
-    },
-    {
-      id: "2",
-      img: foto2,
-    },
-    {
-      id: "3",
-      img: foto3,
-    },
-    {
-      id: "4",
-      img: foto4,
-    },
-    {
-      id: "5",
-      img: foto5,
-    },
-    {
-      id: "6",
-      img: foto6,
-    },
-    {
-      id: "7",
-      img: foto7,
-    },
-    {
-      id: "8",
-      img: foto8,
-    },
-    {
-      id: "9",
-      img: foto9,
-    },
-    {
-      id: "10",
-      img: foto10,
-    },
-    {
-      id: "11",
-      img: foto11,
-    },
-    {
-      id: "12",
-      img: foto12,
-    },
-    {
-      id: "13",
-      img: foto13,
-    },
-    {
-      id: "14",
-      img: foto14,
-    },
-    {
-      id: "15",
-      img: foto15,
-    },
-    {
-      id: "16",
-      img: foto16,
-    },
-    {
-      id: "17",
-      img: foto17,
-    },
-    {
-      id: "18",
-      img: foto18,
-    },
-    {
-      id: "19",
-      img: foto19,
-    },
-    {
-      id: "20",
-      img: foto20,
-    },
+  // Array com informações de altura estimada para cada foto
+  const itemsWithHeight: (Item & { estimatedHeight: number })[] = [
+    { id: "1", img: foto1, estimatedHeight: 450 }, // Foto muito alta
+    { id: "2", img: foto2, estimatedHeight: 280 },
+    { id: "3", img: foto3, estimatedHeight: 420 }, // Foto muito alta
+    { id: "4", img: foto4, estimatedHeight: 240 },
+    { id: "5", img: foto5, estimatedHeight: 480 }, // Foto muito alta
+    { id: "6", img: foto6, estimatedHeight: 260 },
+    { id: "7", img: foto7, estimatedHeight: 380 }, // Foto alta
+    { id: "8", img: foto8, estimatedHeight: 250 },
+    { id: "9", img: foto9, estimatedHeight: 400 }, // Foto alta
+    { id: "10", img: foto10, estimatedHeight: 270 },
+    { id: "11", img: foto11, estimatedHeight: 360 }, // Foto alta
+    { id: "12", img: foto12, estimatedHeight: 240 },
+    { id: "13", img: foto13, estimatedHeight: 440 }, // Foto muito alta
+    { id: "14", img: foto14, estimatedHeight: 230 },
+    { id: "15", img: foto15, estimatedHeight: 390 }, // Foto alta
+    { id: "16", img: foto16, estimatedHeight: 290 },
+    { id: "17", img: foto17, estimatedHeight: 340 }, // Foto alta
+    { id: "18", img: foto18, estimatedHeight: 260 },
+    { id: "19", img: foto19, estimatedHeight: 410 }, // Foto alta
+    { id: "20", img: foto20, estimatedHeight: 250 },
   ];
+
+  // Ordenar por altura estimada (mais altas primeiro)
+  const sortedItems = itemsWithHeight.sort(
+    (a, b) => b.estimatedHeight - a.estimatedHeight
+  );
+
+  // Converter de volta para o formato Item
+  const items: Item[] = sortedItems.map(({ id, img }) => ({ id, img }));
 
   return (
     <section
@@ -127,7 +76,7 @@ export function Gallery() {
       </div>
       <div
         className="w-4/5 mx-auto mt-8 md:mb-16 mb-8"
-        style={{ minHeight: "600px" }}
+        style={{ minHeight: "1000px" }}
       >
         <Masonry
           items={items}
